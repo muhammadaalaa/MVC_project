@@ -1,0 +1,15 @@
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\BLLayer.deps.json
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\BLLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\BLLayer.pdb
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\DAL.dll
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\DAL.pdb
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.csproj.AssemblyReference.cache
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.AssemblyInfoInputs.cache
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.AssemblyInfo.cs
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.csproj.CoreCompileInputs.cache
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.csproj.Up2Date
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\refint\BLLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.pdb
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\ref\BLLayer.dll

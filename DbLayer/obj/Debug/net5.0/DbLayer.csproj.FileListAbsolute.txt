@@ -1,0 +1,11 @@
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\DbLayer.deps.json
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\DbLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\bin\Debug\net5.0\DbLayer.pdb
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfoInputs.cache
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfo.cs
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CoreCompileInputs.cache
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\refint\DbLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\DbLayer.pdb
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\ref\DbLayer.dll

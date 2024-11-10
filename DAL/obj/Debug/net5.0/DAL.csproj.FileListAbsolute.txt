@@ -1,0 +1,12 @@
+E:\dotnet\New folder\thirdTir\DAL\bin\Debug\net5.0\DAL.deps.json
+E:\dotnet\New folder\thirdTir\DAL\bin\Debug\net5.0\DAL.dll
+E:\dotnet\New folder\thirdTir\DAL\bin\Debug\net5.0\DAL.pdb
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.dll
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\refint\DAL.dll
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\DAL.pdb
+E:\dotnet\New folder\thirdTir\DAL\obj\Debug\net5.0\ref\DAL.dll
