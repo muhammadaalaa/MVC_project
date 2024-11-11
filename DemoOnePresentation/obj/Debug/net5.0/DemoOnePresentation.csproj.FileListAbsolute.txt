@@ -441,3 +441,13 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\D
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Department\Create.cshtml.g.cs
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Department\Details.cshtml.g.cs
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Department\Edit.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\DemoOnePresentation.sourcelink.json
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Department\Delete.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\Index.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\create.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\Edit.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\Details.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\Delete.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\employeePartialView\createEditpartialView.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\employeePartialView\detailsDeletePartialView.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Shared\_ButtomsPartialView.cshtml.g.cs

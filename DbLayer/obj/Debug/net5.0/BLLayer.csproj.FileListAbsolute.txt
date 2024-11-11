@@ -13,3 +13,4 @@ E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.dll
 E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\refint\BLLayer.dll
 E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.pdb
 E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\ref\BLLayer.dll
+E:\dotnet\New folder\thirdTir\DbLayer\obj\Debug\net5.0\BLLayer.sourcelink.json

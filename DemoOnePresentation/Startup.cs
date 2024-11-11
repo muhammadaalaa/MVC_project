@@ -28,11 +28,12 @@ namespace DemoOnePresentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IDepartmentReposatory, departmentReposatory>();
             // dependency injection 
+            services.AddScoped<IDepartmentReposatory, departmentReposatory>();
+            services.AddScoped<IEmployeeReposatory, employeeReposatory>();
             services.AddDbContext<MVC_Dbcontext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
         }

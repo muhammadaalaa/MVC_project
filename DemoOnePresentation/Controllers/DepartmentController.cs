@@ -88,8 +88,32 @@ namespace DemoOnePresentation.Controllers
 
             return View(dep);
         }
+        public ActionResult Delete(int? id)
+        {
+            if (id == null) return BadRequest();
+            var result = _departmentreposatry.GetById(id.Value);
+            if (result == null) return NotFound();
+            return View(result);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(Department dep, [FromRoute] int id)
+        {
+            if (id != dep.Id) return BadRequest();
+            try
+            {
+                _departmentreposatry.Delete(dep);
+                return RedirectToAction(nameof(Index));
+
+            }
+            catch (System.Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View(dep);
+            }
 
 
+        }
 
 
 
