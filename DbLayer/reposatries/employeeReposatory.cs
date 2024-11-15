@@ -1,6 +1,7 @@
 ﻿using BLLayer.interFaces;
 using DAL.Contexts;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,15 @@ namespace BLLayer.reposatries
         public IQueryable<Employee> GetEmployeesByAdress(string address)
         {
             return _dbcontext.Employees.Where(E => E.Address == address);
+        }
+
+        public IQueryable<Employee> GetEmployeesByName(string searchName)
+        {
+            return _dbcontext.Employees
+             .Where(E => E.Name.ToLower().Contains(searchName.ToLower()))
+             .Include(E => E.department);
+
+
         }
     }
 }

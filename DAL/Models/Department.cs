@@ -18,5 +18,8 @@ namespace DAL.Models
         public int code { get; set; }
         public DateTime dateOFCreation { get; set; }
 
+
+        public ICollection<Employee> employees = new HashSet<Employee>();
+
     }
 }

@@ -1,18 +1,19 @@
-﻿@model Employee
+﻿
+@model employeeViewModel
 @{
     ViewData["Title"] = "create";
-}
+    }
 
 <h1>create employee </h1>
 <div asp-validation-summary="All"></div>
 
-<form asp-action="Create">
+<form asp-action="Create" enctype="multipart/form-data">
 
     <partial name="employeePartialView/createEditpartialView" />
     <input type="submit" value="submit" class="btn btn-info"/>
     <a asp-action="index" class="btn btn-danger"> cancel</a>
 
 </form>
-@section validationScriptSession {
-    <partial name="_ValidationScriptsPartial" />
+@section createAndEditValidation {
+<partial name="_ValidationScriptsPartial" />
 }

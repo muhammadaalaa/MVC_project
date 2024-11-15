@@ -1,5 +1,11 @@
-﻿@model Employee
+﻿@model employeeViewModel
 
+@{ if(Model.ImageName is not null){<div>
+    <img src="~/Files/Images/@Model.ImageName" class="rounded" height="50"width="50"/>
+    <input asp-for="ImageName" hidden />
+</div>}
+
+}
  <div class="form-group">
 <label class="col-form-label" asp-for="Name"></label>
 <input readonly class="form-control" asp-for="Name" />

@@ -1,6 +1,7 @@
 using BLLayer.interFaces;
 using BLLayer.reposatries;
 using DAL.Contexts;
+using DemoOnePresentation.Profiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,8 +30,15 @@ namespace DemoOnePresentation
         {
             services.AddControllersWithViews();
             // dependency injection 
-            services.AddScoped<IDepartmentReposatory, departmentReposatory>();
-            services.AddScoped<IEmployeeReposatory, employeeReposatory>();
+            #region generic reposatory
+            //services.AddScoped<IEmployeeReposatory, employeeReposatory>(); 
+            services.AddScoped<IDepartmentReposatory, departmentReposatory>(); // object at employee at create i think
+            #endregion
+            services.AddScoped<IUnitOFWork, unitOFWork>();
+
+
+            services.AddAutoMapper(M => M.AddProfile(new employeeProfile()));
+
             services.AddDbContext<MVC_Dbcontext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));

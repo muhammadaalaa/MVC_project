@@ -10,19 +10,26 @@ namespace DAL.Models
     public class Employee
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "name is required")]
-        [MaxLength(50, ErrorMessage = "max Length must be from 5 to 50")]
-        [MinLength(5, ErrorMessage = "min Length must be from 5 to 50")]
+        [Required]
+
         public string Name { get; set; }
         [Required]
-        [EmailAddress]
+
         public string Email { get; set; }
-        [Phone]
+
         public string PhoneNum { get; set; }
         public string Address { get; set; }
-        [DataType(DataType.Currency)]
+
         public decimal Salary { get; set; }
+        public string ImageName { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreationDate { get; set; } = DateTime.Now;
+
+        public int? departmentID { get; set; }
+
+        // oprion will lead when you delete this department will throw an error
+        // if you make it required will lead to be cascade when you delete it 
+        public Department department { get; set; }
+
     }
 }

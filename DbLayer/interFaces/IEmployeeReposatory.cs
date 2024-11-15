@@ -10,5 +10,7 @@ namespace BLLayer.interFaces
     public interface IEmployeeReposatory : IGenericReposatory<Employee>
     {
         IQueryable<Employee> GetEmployeesByAdress(string address);
+        IQueryable<Employee> GetEmployeesByName(string searchName);
+
     }
 }

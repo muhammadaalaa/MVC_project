@@ -7,11 +7,16 @@ namespace DemoOnePresentation.Controllers
 {
     public class departmentController : Controller
     {
-        private readonly IDepartmentReposatory _departmentreposatry;
+        private readonly IUnitOFWork _unitOFWork;
+        #region repo
+        //private readonly IDepartmentReposatory _departmentreposatry;
 
-        public departmentController(IDepartmentReposatory departmentreposatry)
+        //public departmentController(IDepartmentReposatory departmentreposatry) 
+        #endregion
+        public departmentController(IUnitOFWork unitOFWork)
         {
-            _departmentreposatry = departmentreposatry;
+            //_departmentreposatry = departmentreposatry;
+            _unitOFWork = unitOFWork;
         }
 
 
@@ -19,7 +24,10 @@ namespace DemoOnePresentation.Controllers
         // GET: departmentController1
         public ActionResult Index()
         {
-            var department = _departmentreposatry.GetAll();
+            //var department = _departmentreposatry.GetAll();
+            var department = _unitOFWork.DepartmentReposatory.GetAll();
+            _unitOFWork.compelete();
+
             return View(department);
         }
         // GET: departmentController1/Create
@@ -35,7 +43,9 @@ namespace DemoOnePresentation.Controllers
         {
             if (ModelState.IsValid)
             {
-                _departmentreposatry.Add(department);
+                //_departmentreposatry.Add(department);
+                _unitOFWork.DepartmentReposatory.Add(department);
+                _unitOFWork.compelete();
                 return Redirect(nameof(Index));
 
             }
@@ -47,7 +57,10 @@ namespace DemoOnePresentation.Controllers
         public ActionResult Details(int? id, string ViewName = "Details")
         {
             if (id == null) return BadRequest();
-            var res = _departmentreposatry.GetById(id.Value);
+            //var res = _departmentreposatry.GetById(id.Value);
+            var res = _unitOFWork.DepartmentReposatory.GetById(id.Value);
+            _unitOFWork.compelete();
+
             if (res == null) return NotFound();
             return View(ViewName, res);
 
@@ -73,7 +86,10 @@ namespace DemoOnePresentation.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    _departmentreposatry.Update(dep);
+                    //_departmentreposatry.Update(dep);
+                    _unitOFWork.DepartmentReposatory.Update(dep);
+                    _unitOFWork.compelete();
+
                     return RedirectToAction(nameof(Index));
                 };
 
@@ -91,7 +107,10 @@ namespace DemoOnePresentation.Controllers
         public ActionResult Delete(int? id)
         {
             if (id == null) return BadRequest();
-            var result = _departmentreposatry.GetById(id.Value);
+            //var result = _departmentreposatry.GetById(id.Value);
+            var result = _unitOFWork.DepartmentReposatory.GetById(id.Value);
+            _unitOFWork.compelete();
+
             if (result == null) return NotFound();
             return View(result);
         }
@@ -102,7 +121,10 @@ namespace DemoOnePresentation.Controllers
             if (id != dep.Id) return BadRequest();
             try
             {
-                _departmentreposatry.Delete(dep);
+                //_departmentreposatry.Delete(dep);
+                _unitOFWork.DepartmentReposatory.Delete(dep);
+                _unitOFWork.compelete();
+
                 return RedirectToAction(nameof(Index));
 
             }

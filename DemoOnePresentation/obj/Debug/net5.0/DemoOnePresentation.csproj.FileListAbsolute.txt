@@ -97,7 +97,6 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsof
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -123,8 +122,6 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsof
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.ObjectPool.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -223,7 +220,6 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.R
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Resources.Reader.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Resources.ResourceManager.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Resources.Writer.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.VisualC.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Runtime.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\System.Runtime.Extensions.dll
@@ -451,3 +447,9 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\e
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\employeePartialView\createEditpartialView.cshtml.g.cs
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\employee\employeePartialView\detailsDeletePartialView.cshtml.g.cs
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Shared\_ButtomsPartialView.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\AutoMapper.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

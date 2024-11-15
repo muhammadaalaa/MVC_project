@@ -1,6 +1,9 @@
 ﻿using BLLayer.interFaces;
 using DAL.Contexts;
+using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,21 +19,28 @@ namespace BLLayer.reposatries
         {
             _dbcontext = dbcontext;
         }
-        public int Add(T item)
+        //public int Add(T item)
+        public void Add(T item)
         {
             _dbcontext.Add(item);
-            return _dbcontext.SaveChanges();
+            //return _dbcontext.SaveChanges();
 
         }
 
-        public int Delete(T item)
+        //public int Delete(T item)
+        public void Delete(T item)
         {
             _dbcontext.Remove(item);
-            return _dbcontext.SaveChanges();
+            //return _dbcontext.SaveChanges();
+
         }
 
         public IEnumerable<T> GetAll()
         {
+            if (typeof(T) == typeof(Employee))
+            {
+                return (IEnumerable<T>)_dbcontext.Employees.Include(E => E.department).ToList();
+            }
             return _dbcontext.Set<T>().ToList();
         }
 
@@ -39,10 +49,10 @@ namespace BLLayer.reposatries
             return _dbcontext.Set<T>().Find(id);
         }
 
-        public int Update(T item)
+        public void Update(T item)
         {
             _dbcontext.Update(item);
-            return _dbcontext.SaveChanges();
+            //return _dbcontext.SaveChanges();
         }
     }
 }

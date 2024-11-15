@@ -59,13 +59,15 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNum")
                         .HasColumnType("nvarchar(max)");
@@ -73,9 +75,23 @@ namespace DAL.Migrations
                     b.Property<decimal>("Salary")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int?>("departmentID")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("departmentID");
+
                     b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("DAL.Models.Employee", b =>
+                {
+                    b.HasOne("DAL.Models.Department", "department")
+                        .WithMany()
+                        .HasForeignKey("departmentID");
+
+                    b.Navigation("department");
                 });
 #pragma warning restore 612, 618
         }

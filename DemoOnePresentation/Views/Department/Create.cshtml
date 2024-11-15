@@ -14,9 +14,9 @@
      <span asp-validation-for="code" class="text-dander"></span>
      </div>    
      <div class="form-group">
-     <label class="col-form-label" asp-for="name"></label>    
-     <input class="form-control" asp-for="name"/>
-     <span asp-validation-for="name" class="text-dander"></span>
+        <label class="col-form-label" asp-for="name"></label>
+        <input class="form-control" asp-for="name" />
+        <span asp-validation-for="name" class="text-dander"></span>
      </div> 
      <div class="form-group">
      <label class="col-form-label" asp-for="dateOFCreation"></label>    
@@ -27,9 +27,8 @@
      <a asp-action="index" asp-controller="department" class="btn btn-danger" >back to list</a>
 </form>
 
-     
 @section createAndEditValidation {
-    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <partial name="_ValidationScriptsPartial" />
 
 }
