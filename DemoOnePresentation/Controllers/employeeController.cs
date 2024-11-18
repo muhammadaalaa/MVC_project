@@ -4,13 +4,16 @@ using BLLayer.reposatries;
 using DAL.Models;
 using DemoOnePresentation.helper;
 using DemoOnePresentation.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Authentication.ExtendedProtection;
+using System.Threading.Tasks;
 
 namespace DemoOnePresentation.Controllers
 {
+    [Authorize]
     public class employeeController : Controller
     {
         #region generic reposatory
@@ -30,14 +33,14 @@ namespace DemoOnePresentation.Controllers
             _unitOfwork = unitOfwork;
             _mapper = mapper;
         }
-        public IActionResult Index(string searchValue)
+        public async Task<IActionResult> Index(string searchValue)
         {
             if (string.IsNullOrEmpty(searchValue))
             {
                 #region repos
                 //var res = _employeeReposatory.GetAll(); 
                 #endregion
-                var res = _unitOfwork.EmployeeReposatory.GetAll();
+                var res = await _unitOfwork.EmployeeReposatory.GetAllAsync();
                 var mappedEmloyee = _mapper.Map<IEnumerable<Employee>, IEnumerable<employeeViewModel>>(res);
                 return View(mappedEmloyee);
                 ///1-viewData
@@ -52,33 +55,33 @@ namespace DemoOnePresentation.Controllers
             return View(mappedEmployees);
         }
         [HttpGet]
-        public IActionResult create()
+        public async Task<IActionResult> create()
         {
             //ViewBag.Department = _departmentReposatory.GetAll();
-            ViewBag.Department = _unitOfwork.DepartmentReposatory.GetAll();
+            ViewBag.Department = await _unitOfwork.DepartmentReposatory.GetAllAsync();
             return View();
         }
         [HttpPost]
-        public IActionResult create(employeeViewModel empVM)
+        public async Task<IActionResult> create(employeeViewModel empVM)
         {
             try
             {
                 //any thing dealing with dataBase will be with view model ==> class render at view
                 // we have to do mapping or explicit casting or declaring object and give the alues of the viewModels to this object
                 // but there is an method doing that automatically
-                if (empVM.ImageName is not null)
-                {
-                    empVM.ImageName = Documentettings.uploadFile(empVM.Image, "images");
-                }
+
+
+                empVM.ImageName = Documentettings.uploadFile(empVM.Image, "Images");
+
 
 
 
                 var mappedEmployee = _mapper.Map<employeeViewModel, Employee>(empVM);
                 //var res = _employeeReposatory.Add(mappedEmployee);
-                _unitOfwork.EmployeeReposatory.Add(mappedEmployee);
+                await _unitOfwork.EmployeeReposatory.AddAsync(mappedEmployee);
 
                 TempData["Message"] = "data is created";
-                _unitOfwork.compelete();
+                await _unitOfwork.compeleteAsync();
                 return RedirectToAction(nameof(Index));
 
             }
@@ -90,13 +93,14 @@ namespace DemoOnePresentation.Controllers
             return View(empVM);
         }
         [HttpGet]
-        public IActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
+
             if (id == null) return BadRequest();
             //var res = _employeeReposatory.GetById(id.Value);
-            var res = _unitOfwork.EmployeeReposatory.GetById(id.Value);
+            var res = await _unitOfwork.EmployeeReposatory.GetByIdAsync(id.Value);
             //ViewBag.Department = _departmentReposatory.GetAll();
-            ViewBag.Department = _unitOfwork.DepartmentReposatory.GetAll();
+            ViewBag.Department = await _unitOfwork.DepartmentReposatory.GetAllAsync();
             if (res == null) return NotFound();
             var mappedresult = _mapper.Map<Employee, employeeViewModel>(res);
             try
@@ -112,43 +116,48 @@ namespace DemoOnePresentation.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(employeeViewModel empVM, [FromRoute] int id)
+        public async Task<IActionResult> Edit(employeeViewModel empVM, [FromRoute] int id)
         {
             if (ModelState.IsValid)
             {
+
+
+
+                empVM.ImageName = Documentettings.uploadFile(empVM.Image, "Images");
+
                 var map_mapper = _mapper.Map<Employee>(empVM);
                 if (id != map_mapper.Id) return NotFound();
                 if (map_mapper == null) return BadRequest();
                 //_employeeReposatory.Update(map_mapper);
                 _unitOfwork.EmployeeReposatory.Update(map_mapper);
-                _unitOfwork.compelete();
+                await _unitOfwork.compeleteAsync();
                 return RedirectToAction(nameof(Index));
 
             }
             return View(empVM);
         }
 
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return BadRequest();
             //var res = _employeeReposatory.GetById(id.Value);
-            var res = _unitOfwork.EmployeeReposatory.GetById(id.Value);
+            var res = await _unitOfwork.EmployeeReposatory.GetByIdAsync(id.Value);
 
             var mappedElement = _mapper.Map<Employee, employeeViewModel>(res);
             return View(mappedElement);
         }
         [HttpGet]
-        public IActionResult Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return BadRequest();
             //var res = _employeeReposatory.GetById(id.Value);
-            var res = _unitOfwork.EmployeeReposatory.GetById(id.Value);
+            var res = await _unitOfwork.EmployeeReposatory.GetByIdAsync(id.Value);
 
             var mappedElement = _mapper.Map<Employee, employeeViewModel>(res);
             return View(mappedElement);
         }
         [HttpPost]
-        public IActionResult Delete(employeeViewModel emp)
+        public async Task<IActionResult> Delete(employeeViewModel emp)
         {
             if (emp == null) return NotFound();
             try
@@ -156,7 +165,7 @@ namespace DemoOnePresentation.Controllers
                 var mappedelement = _mapper.Map<Employee>(emp);
                 //_employeeReposatory.Delete(mappedelement);
                 _unitOfwork.EmployeeReposatory.Delete(mappedelement);
-                var res = _unitOfwork.compelete();
+                var res = await _unitOfwork.compeleteAsync();
                 if (res > 0 && emp.ImageName is not null)
                 {
                     Documentettings.deleteFile(emp.ImageName, "Images");

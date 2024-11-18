@@ -1,10 +1,13 @@
 ﻿using BLLayer.interFaces;
 using DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace DemoOnePresentation.Controllers
 {
+    [Authorize]
     public class departmentController : Controller
     {
         private readonly IUnitOFWork _unitOFWork;
@@ -22,11 +25,11 @@ namespace DemoOnePresentation.Controllers
 
 
         // GET: departmentController1
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             //var department = _departmentreposatry.GetAll();
-            var department = _unitOFWork.DepartmentReposatory.GetAll();
-            _unitOFWork.compelete();
+            var department = await _unitOFWork.DepartmentReposatory.GetAllAsync();
+            await _unitOFWork.compeleteAsync();
 
             return View(department);
         }
@@ -39,13 +42,13 @@ namespace DemoOnePresentation.Controllers
         }
         [HttpPost]
 
-        public ActionResult Create(Department department)
+        public async Task<ActionResult> Create(Department department)
         {
             if (ModelState.IsValid)
             {
                 //_departmentreposatry.Add(department);
-                _unitOFWork.DepartmentReposatory.Add(department);
-                _unitOFWork.compelete();
+                await _unitOFWork.DepartmentReposatory.AddAsync(department);
+                await _unitOFWork.compeleteAsync();
                 return Redirect(nameof(Index));
 
             }
@@ -54,18 +57,18 @@ namespace DemoOnePresentation.Controllers
                 return View(department);
             }
         }
-        public ActionResult Details(int? id, string ViewName = "Details")
+        public async Task<ActionResult> Details(int? id, string ViewName = "Details")
         {
             if (id == null) return BadRequest();
             //var res = _departmentreposatry.GetById(id.Value);
-            var res = _unitOFWork.DepartmentReposatory.GetById(id.Value);
-            _unitOFWork.compelete();
+            var res = await _unitOFWork.DepartmentReposatory.GetByIdAsync(id.Value);
+            await _unitOFWork.compeleteAsync();
 
             if (res == null) return NotFound();
             return View(ViewName, res);
 
         }
-        public ActionResult Edit(int? id)
+        public Task<ActionResult> Edit(int? id)
         {
             //if (id == null) return BadRequest();
             //var res = _departmentreposatry.GetById(id.Value);
@@ -75,7 +78,7 @@ namespace DemoOnePresentation.Controllers
         }
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public ActionResult Edit(Department dep, [FromRoute] int id)
+        public async Task<ActionResult> Edit(Department dep, [FromRoute] int id)
         {
             if (id != dep.Id)
             {
@@ -88,7 +91,7 @@ namespace DemoOnePresentation.Controllers
                 {
                     //_departmentreposatry.Update(dep);
                     _unitOFWork.DepartmentReposatory.Update(dep);
-                    _unitOFWork.compelete();
+                    await _unitOFWork.compeleteAsync();
 
                     return RedirectToAction(nameof(Index));
                 };
@@ -104,26 +107,26 @@ namespace DemoOnePresentation.Controllers
 
             return View(dep);
         }
-        public ActionResult Delete(int? id)
+        public async Task<ActionResult> Delete(int? id)
         {
             if (id == null) return BadRequest();
             //var result = _departmentreposatry.GetById(id.Value);
-            var result = _unitOFWork.DepartmentReposatory.GetById(id.Value);
-            _unitOFWork.compelete();
+            var result = await _unitOFWork.DepartmentReposatory.GetByIdAsync(id.Value);
+            await _unitOFWork.compeleteAsync();
 
             if (result == null) return NotFound();
             return View(result);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(Department dep, [FromRoute] int id)
+        public async Task<ActionResult> Delete(Department dep, [FromRoute] int id)
         {
             if (id != dep.Id) return BadRequest();
             try
             {
                 //_departmentreposatry.Delete(dep);
                 _unitOFWork.DepartmentReposatory.Delete(dep);
-                _unitOFWork.compelete();
+                await _unitOFWork.compeleteAsync();
 
                 return RedirectToAction(nameof(Index));
 
@@ -137,79 +140,5 @@ namespace DemoOnePresentation.Controllers
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-        //// GET: departmentController1/Details/5
-        //public ActionResult Details(int id)
-        //{
-        //    return View();
-        //}
-
-
-        //// POST: departmentController1/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
-        //// GET: departmentController1/Edit/5
-        //public ActionResult Edit(int id)
-        //{
-        //    return View();
-        //}
-
-        //// POST: departmentController1/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
-        //// GET: departmentController1/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View();
-        //}
-
-        //// POST: departmentController1/Delete/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Delete(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
     }
 }

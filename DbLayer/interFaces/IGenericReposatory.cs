@@ -9,15 +9,15 @@ namespace BLLayer.interFaces
 {
     public interface IGenericReposatory<T>
     {
-        IEnumerable<T> GetAll();
-        T GetById(int id);
+        Task<IEnumerable<T>> GetAllAsync();
+        Task<T> GetByIdAsync(int id);
         #region generic
         //int Add(T item);
         //int Update(T item);
         //int Delete(T item); 
         #endregion
         #region unitOfWork
-        void Add(T item);
+        Task AddAsync(T item);
         void Update(T item);
         void Delete(T item);
         #endregion

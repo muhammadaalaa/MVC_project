@@ -22,8 +22,6 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsof
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cors.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -107,8 +105,6 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsof
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Http.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Core.dll
-E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Stores.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
@@ -453,3 +449,14 @@ E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Ext
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Shared\AuthLayout.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Account\ForgetPassword.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Account\CheckYouInBox.cshtml.g.cs
+E:\dotnet\New folder\thirdTir\DemoOnePresentation\obj\Debug\net5.0\Razor\Views\Account\Ressetpassword.cshtml.g.cs

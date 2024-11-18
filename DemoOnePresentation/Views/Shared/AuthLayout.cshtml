@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>@ViewData["title"]</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+    <link href="~/css/css/authstylesheet.css" rel="stylesheet" />
+    <link href="~/css/css/style.css" rel="stylesheet" />
+	<link href="~/css/css/modfytxt.css" rel="stylesheet" />
+    <link href="~/css/css/checkboxcss.css" rel="stylesheet" />
+</head>
+<body class="form-v5">
+	<div class="page-content">
+		<div class="form-v5-content">
+			@RenderBody()
+		</div>
+	</div>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ 
+
+	@await RenderSectionAsync("createAndEditValidation", required: false )
+</body>
+</html>

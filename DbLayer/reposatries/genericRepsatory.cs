@@ -20,9 +20,9 @@ namespace BLLayer.reposatries
             _dbcontext = dbcontext;
         }
         //public int Add(T item)
-        public void Add(T item)
+        public async Task AddAsync(T item)
         {
-            _dbcontext.Add(item);
+            await _dbcontext.AddAsync(item);
             //return _dbcontext.SaveChanges();
 
         }
@@ -35,18 +35,18 @@ namespace BLLayer.reposatries
 
         }
 
-        public IEnumerable<T> GetAll()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
             if (typeof(T) == typeof(Employee))
             {
-                return (IEnumerable<T>)_dbcontext.Employees.Include(E => E.department).ToList();
+                return (IEnumerable<T>)await _dbcontext.Employees.Include(E => E.department).ToListAsync();
             }
-            return _dbcontext.Set<T>().ToList();
+            return await _dbcontext.Set<T>().ToListAsync();
         }
 
-        public T GetById(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            return _dbcontext.Set<T>().Find(id);
+            return await _dbcontext.Set<T>().FindAsync(id);
         }
 
         public void Update(T item)

@@ -1,14 +1,18 @@
 using BLLayer.interFaces;
 using BLLayer.reposatries;
 using DAL.Contexts;
+using DAL.Models;
 using DemoOnePresentation.Profiles;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +39,22 @@ namespace DemoOnePresentation
             services.AddScoped<IDepartmentReposatory, departmentReposatory>(); // object at employee at create i think
             #endregion
             services.AddScoped<IUnitOFWork, unitOFWork>();
+            //services.AddScoped<UserManager<applicationUser>>();
+            services.AddIdentity<applicationUser, IdentityRole>(
+                Options =>
+                {
+                    Options.Password.RequireNonAlphanumeric = true;
+                    Options.Password.RequireDigit = true;
+                    Options.Password.RequireLowercase = true;
+                    Options.Password.RequireUppercase = true;
 
+                }).AddEntityFrameworkStores<MVC_Dbcontext>().AddDefaultTokenProviders();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(Options =>
+            {
+                Options.LoginPath = "Account/login";
+                Options.AccessDeniedPath = "Home/error";
+            });
 
             services.AddAutoMapper(M => M.AddProfile(new employeeProfile()));
 
@@ -63,14 +82,14 @@ namespace DemoOnePresentation
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Account}/{action=login}/{id?}");
             });
         }
     }

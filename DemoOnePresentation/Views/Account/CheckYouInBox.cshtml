@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "CheckYouInBox";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #6cb2a3, #b3dcd7); /* Full background gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            box-sizing: border-box; /* Include padding in width/height calculations */
+        }
+
+        .message-box {
+            background-color: #ffffff; /* White background for the box */
+            color: #2f4f4f; /* Calm text color */
+            border-radius: 12px; /* Rounded corners */
+            padding: 30px;
+            text-align: center;
+            /* box-shadow: /* 0 */ 8px 20px rgba(0, 0, 0, 0.15); /* Shadow for depth */ */
+            max-width: 450px; /* Fixed width for the box */
+            width: 100%;
+            margin: auto; /* Ensure it stays centered */
+        }
+
+            .message-box h1 {
+                font-size: 22px;
+                margin-bottom: 15px;
+                font-weight: bold;
+                color: #276d63; /* Greenish text color */
+            }
+
+            .message-box p {
+                font-size: 16px;
+                line-height: 1.6; /* Better line spacing */
+                margin: 10px 0; /* Consistent spacing */
+            }
+
+            .message-box a {
+                display: inline-block;
+                padding: 12px 28px; /* Better button size */
+                background-color: #2f8f85; /* Calm green button */
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 8px; /* Rounded button corners */
+                font-weight: bold;
+                font-size: 16px;
+                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle button shadow */ */
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                .message-box a:hover {
+                    background-color: #276d63; /* Slightly darker green on hover */
+                    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */ */
+                }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Check Your Inbox</h1>
+        <p>A password reset link has been sent to your email address. Please check your inbox to proceed.</p>
+        <a href="https://mail.google.com/mail/u/0/?hl=en" target="_blank">Go To Your Inbox</a>
+    </div>
+</body>
+</html>
+
+

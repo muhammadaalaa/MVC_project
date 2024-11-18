@@ -1,0 +1,59 @@
+﻿  @model regesterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+<div asp-validation-summary="All"></div>
+<h2 class="form-heading p-2">Register Account Form</h2>
+
+<form class="form-detail" asp-action="Register" method="post">
+<div class="form-row" >
+<label for="firstName" > FirstName</label >
+<input asp-for="FirstName" id="full-name" class="input-text" placeholder="Your FirstName" required >
+<span asp-validation-for="FirstName" class="text-danger"></span>
+<i class="fas fa-user" > </i >
+<br />
+<label for="LastName" > LastName</label >
+<input asp-for="Lastname" id="full-name" class="input-text" placeholder="Your LastName" required >
+<span asp-validation-for="Lastname" class="text-danger"></span>
+<br />
+<label for="Email" > Email</label >
+<input asp-for="Email" id="Email" class="input-text" placeholder="Your Email" required >
+<span asp-validation-for="Email" class="text-danger"></span>
+<i class="fas fa-envelope" > </i >
+<br />
+<div class="form-row" >
+<label for="password" > Password</label >
+<input asp-for="password" id="password" class="input-text" placeholder="Your Password" required >
+<span asp-validation-for="password"></span>
+<i class="fas fa-lock" > </i >
+</div >
+<br />
+<div class="form-row" >
+<label for="Password" > Confirm Password</label >
+<input asp-for="confirmPassword" id="confirm password" class="input-text" placeholder="Your confirm Password" required >
+<span asp-validation-for="confirmPassword"></span>
+<i class="fas fa-lock" > </i >
+</div >
+ <br />
+        <div class="checkbox-wrapper-19">
+            <input type="checkbox" id="cbtest-19" />
+            <label for="cbtest-19" class="check-box"></label>
+            <span class="checkbox-text">I agree to the <a href="#">Terms and Conditions</a></span>
+        </div>
+
+
+<div class="form-row-last" >
+<input type="submit" name="register" class="register" value="Register" >
+</div >
+       
+
+</form >
+<div class="account-link">
+    <p>If you have an account, <a asp-action="Login" class="login-link">Login</a>.</p>
+</div>
+
+
+@section createAndEditValidation {
+    <partial name="_ValidationScriptsPartial" />
+}

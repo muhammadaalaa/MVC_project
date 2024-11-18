@@ -10,6 +10,6 @@ namespace BLLayer.interFaces
     {
         public IEmployeeReposatory EmployeeReposatory { get; set; }
         public IDepartmentReposatory DepartmentReposatory { get; set; }
-        int compelete();
+        Task<int> compeleteAsync();
     }
 }

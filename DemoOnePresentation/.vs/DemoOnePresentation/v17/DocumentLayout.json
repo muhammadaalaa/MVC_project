@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\helper\\documentettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:helper\\documentettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\viewmodels\\regesterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:viewmodels\\regesterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\views\\employee\\employeepartialview\\detailsdeletepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:views\\employee\\employeepartialview\\detailsdeletepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\views\\employee\\employeepartialview\\createeditpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|solutionrelative:views\\employee\\employeepartialview\\createeditpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16F0F4C-AC95-4C14-AFA8-2827E5C1266D}|DemoOnePresentation.csproj|e:\\dotnet\\new folder\\thirdtir\\demoonepresentation\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,19 +30,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "detailsDeletePartialView.cshtml",
-              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\employeePartialView\\detailsDeletePartialView.cshtml",
-              "RelativeDocumentMoniker": "Views\\employee\\employeePartialView\\detailsDeletePartialView.cshtml",
-              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\employeePartialView\\detailsDeletePartialView.cshtml",
-              "RelativeToolTip": "Views\\employee\\employeePartialView\\detailsDeletePartialView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "regesterViewModel.cs",
+              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\ViewModels\\regesterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\regesterViewModel.cs",
+              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\ViewModels\\regesterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\regesterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T23:36:25.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\employee\\Index.cshtml",
+              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\Index.cshtml",
+              "RelativeToolTip": "Views\\employee\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAvwFcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T00:57:35.424Z"
+              "WhenOpened": "2024-11-17T23:24:09.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "createEditpartialView.cshtml",
+              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\employeePartialView\\createEditpartialView.cshtml",
+              "RelativeDocumentMoniker": "Views\\employee\\employeePartialView\\createEditpartialView.cshtml",
+              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\employeePartialView\\createEditpartialView.cshtml",
+              "RelativeToolTip": "Views\\employee\\employeePartialView\\createEditpartialView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T23:23:35.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T23:15:44.266Z"
             },
             {
               "$type": "Document",
@@ -48,34 +88,10 @@
               "RelativeDocumentMoniker": "Controllers\\employeeController.cs",
               "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Controllers\\employeeController.cs",
               "RelativeToolTip": "Controllers\\employeeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T00:52:38.398Z",
+              "WhenOpened": "2024-11-17T23:10:45.904Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Documentettings.cs",
-              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\helper\\Documentettings.cs",
-              "RelativeDocumentMoniker": "helper\\Documentettings.cs",
-              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\helper\\Documentettings.cs",
-              "RelativeToolTip": "helper\\Documentettings.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T00:38:47.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\employee\\Index.cshtml",
-              "ToolTip": "E:\\dotnet\\New folder\\thirdTir\\DemoOnePresentation\\Views\\employee\\Index.cshtml",
-              "RelativeToolTip": "Views\\employee\\Index.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADgAAAB0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T00:30:39.367Z"
             }
           ]
         }

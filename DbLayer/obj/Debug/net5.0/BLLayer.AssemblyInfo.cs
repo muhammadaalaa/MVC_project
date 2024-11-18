@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BLLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54e25839cd7781e6b56d4c4f26a8adf6ca597e5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ecd6e75f5b622c7a7df8a74cd6c5bfcb540ac86")]
 [assembly: System.Reflection.AssemblyProductAttribute("BLLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BLLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
